@@ -1,3 +1,8 @@
+#Ishraq Mahid
+#SoftDev
+#K02 -- PrintName Classwork
+#2021-09-21
+
 import random
 pd1 = ["Ivan", "Gavin", "Ishraq", "Michael", "William", "David", "Richard", "Joseph", "Thomas", "Charles", "Christopher", "Daniel", "Matthew", "Anthony", "Mark", "Mary", "Patricia", "Jennifer", "Linda", "Elizabeth"]
 pd2 = ["James", "Robert", "John", "Donald", "Steven", "Paul", "Andrew",  "Joshua", "Maria", "Nushi", "Mohammed", "Jose", "Muhammad", "Mohamed", "Wei", "Mohammad", "Ahmed", "Yan", "Ali", "Li", "Abdul", "Ana"]
