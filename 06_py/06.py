@@ -17,12 +17,19 @@ for row in spamreader:
 """
 reader = csv.DictReader(csv_file)
 
-print(reader)
+#print(reader)
 
 workforce_dict = {}
+tickets = []
 
 for row in reader:
-    print(row)
+    #print(row)
     workforce_dict[row['Job Class']] = row['Percentage']
+    percentage = int(float(row['Percentage'])*10)
+    #print(percentage)
+    for i in range(percentage):
+        if(row['Job Class'] != 'Total'):
+            tickets.append(row['Job Class'])
 
-print(workforce_dict)
+#print(workforce_dict)
+print(tickets)
