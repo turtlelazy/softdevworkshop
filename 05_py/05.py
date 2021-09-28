@@ -40,7 +40,7 @@ def main():
     """Prints a random student name given two files containing lists of names,
     where each line contains one name."""
     if len(sys.argv) != 3:
-        print("Usage: python 05_py.py pd1_filename pd2_filename")
+        print("Usage: python 05.py pd1_filename pd2_filename")
         return
 
     pd1 = read_names(sys.argv[1])
