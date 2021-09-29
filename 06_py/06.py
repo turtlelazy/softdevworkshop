@@ -5,7 +5,7 @@ k06 -- Weighted Probability
 2021-9-28
 """
 
-import csv
+import csv, random
 
 csv_file = open("occupations.csv")
 
@@ -31,5 +31,4 @@ for row in reader:
         if(row['Job Class'] != 'Total'):
             tickets.append(row['Job Class'])
 
-#print(workforce_dict)
-print(tickets)
+print(random.choices(tickets))
