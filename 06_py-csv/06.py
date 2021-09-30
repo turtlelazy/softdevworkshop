@@ -3,52 +3,46 @@ Ishraq Mahid, Gavin McGinley, Ivan Mijacika - Cool Dogs
 Softdev
 k06 -- Weighted Probability
 2021-9-28
-"""
 
-"""
-#SUMMARY OF TRIO DISCUSSION 
-We mainly focused on ideas for weighting based on percentages. We had roughly the
-same ideas on how to parse the csv file (following documentation), but the algorithm
-that would process that data was much more confusing. Eventually, we thought of approaching
-the issue with a list, appending the job category for each 0.1 percent, and then choosing
-randomly from the list. This would weight the jobs
-
-#DISCOVERIES
-We looked at the csv module documentation and figured out how to use it.
+#SUMMARY OF DISCUSSION:
+We mainly worked together figuring out how to read in CSVs, and conceptualizing how to best do weighted randomness.
 
 #QUESTIONS 
-What is the better way to do weighted averages? Our group felt that utilizing a list in 
+What is the better way to do weighted averages? Our group felt that utilizing a list or dictionaries 
 this manner had to be vastly inferior and ineffecient compared to the best solution,
 despite not knowing what the best solution is.
 
-#COMMENTS
+#Discoveries:
+We mainly just figured out how reading in CSV files works.
+
+#Comments:
 This method also limits scalability. If sig figs increase, some code has to be created
 in response.
 """
-import csv, random
+def weighted():
+    import csv
+    import random
 
-###Reading .csv file
-csv_file = open("occupations.csv")
+    #Reads CSV into program as "reader"
+    csv_file=open("occupations.csv")
+    reader=csv.reader(csv_file)
 
-reader = csv.DictReader(csv_file)
+    #skips first line
+    next(reader)
 
-#print(reader)
+    #Adds CSV info to dictionary
+    wdict={}
+    for row in reader:
+        wdict[row[0]]=float(row[1])
 
-###Taking data from csv and placing into db
-workforce_dict = {}
-tickets = []
+    #Randomly generates number    
+    num=random.randint(1,998) #instead of putting 998, we can also input total to possibly improve scalabiliyt?
+    total=0
 
-for row in reader:
-    #print(row)
-    workforce_dict[row['Job Class']] = float(row['Percentage'])
-    percentage = int(float(row['Percentage'])*10)
-    #print(percentage)
-    for i in range(percentage):
-        if(row['Job Class'] != 'Total'):
-            tickets.append(row['Job Class'])
-
-###Gets randomJob, weighted
-def randomJob(list):
-    return random.choice(list)
-
-print(randomJob(tickets))
+    #Likeliness of passing total is proportional to its percentage
+    for x in wdict.keys():
+        total=total+(wdict[x]*10)
+        if total>=num:
+            print(x)
+            break
+weighted()
