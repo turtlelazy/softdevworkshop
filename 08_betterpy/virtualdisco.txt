@@ -1,0 +1,19 @@
+Group 4 - Ishraq Mahid, Michelle Lo, Rengeng Zheng
+SoftDev
+K08 -- Magical Command
+2021 - 9 - 30
+
+Summary:
+After running it, we decided to break it down. Python3 indicated we were running something python related. Afterward, there was "-m", 
+so we searched for what -m meant. After some snooping, we found it required a module name after it. This led us to search for the module
+named venv, which in turn was something that created virtual environments. We checked our root directory and found the magical folder
+called myherozero, which contained a lot more folders and files within it. We thus concluded, that the command utilized the module
+venv to create a virtual environment, in the created folder myherozero.
+
+Questions:
+What is a virtual environment? We remembered hearing about it but weren't entirely sure if we really knew what it was.
+
+Comments:
+We utilized Python docs for our discovery:
+    - https://docs.python.org/3/using/cmdline.html?highlight=#cmdoption-m
+    - https://docs.python.org/3/library/venv.html 

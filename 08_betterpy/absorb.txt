@@ -1,0 +1,24 @@
+Group 4 - Ishraq Mahid, Michelle Lo, Rengeng Zheng
+SoftDev
+K08 -- Less Magical Collaboration and Revision
+2021 - 9 - 30
+
+Summary:
+
+Reng and Michelle utilized user input to decide whether they should output a random name from either of the classes,
+whereas both of my groups chose to not give the user a choice, and just spit out a random student from both classes.
+Reng highlighted an interesting tactic, where we utilize a DEBUG boolean in order to help us debug our code and print 
+out statements when we need them. When we're done and testing/ready for production, we can simply set the debug to false.
+
+Our tactics for getting weighted probability were pretty similar, as we added percentages consecutively, while choosing a random
+number from the range 1-998. I took note of a very ineffecient method, where we can store each thousanth of a percent as a ticket
+in a list, from which we can randomly select. This made Reng cringe inwardly. Michelle pointed out a very clean solution,
+that utilizes an inbuilt python method that allows for weighted probability (she still made her own weighted probability but wasn't
+satisfied and sought potentially better/existing means).
+
+Questions:
+What is the "best solution"?
+
+Comments:
+Advantage of list method is that it is extremely simple and requires little competent thinking. Meanwhile, the method we all ended
+up doing is much quicker, uses less memory, and easily scalable.
