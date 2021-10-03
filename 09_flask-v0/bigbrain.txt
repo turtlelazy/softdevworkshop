@@ -1,0 +1,32 @@
+Batfish : Ishraq Mahid & Fish with Deven Maheshwari & Batman
+SoftDev
+K09 -- Frameworks, Flask, Greatness, and Duckies!
+
+Summary:
+We talked about frameworks, VENVS, and gave our duckies a name.
+
+Questions:
+
+Q0: Where have you seen similar syntax in other langs?
+I remember seeing something similar in Java. In Java, you start off with the class name and in parentheses is the constructor. 
+Perhaps we are creating a Flask object using this (__name__) constructor?
+
+Q1: What points of reference do you have for meaning of '/'?
+This reminds me of directories (and webpage urls which also utilize directories). / is generally used to mark off folder and directory paths.
+the "app.route("/")" might imply that the route we are working with is the root directory, since the only marker we have there is the slash.
+
+Q2: Where will this print to? Q3: What will it print?
+It seems to me that it will print in the terminal/console, since it seems like a basic print statement inside of a normal function.
+
+Q3: Will this appear anywhere? How u know?
+I don't believe that it will print anywhere, nor return anything, because the hello_world() function was not called anywhere. Perhaps
+hello_world maybe be a method that we are overriding, or something of the sort but to my knowledge I don't see a way for this function to
+be called and do anything.
+
+Q4: Where have you seen similar construcs in other languages?
+This reminds me of Java/OOP once again. In OOP, we have objects, which in turn have methods. I remember from Java calling methods of an 
+object by writing .methodName(), with whatever parameters desired in the parentheses. It seems like we are telling a Flask object, stored 
+under app, to run.
+
+Comments:
+Ducks are cool. Frameworks seem interesting; I'm excited to start learning tools to be a SoftDev!

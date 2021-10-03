@@ -1,0 +1,15 @@
+Microframework:
+- templating
+- DB access
+- session management
+
+Flask:
+- werkzeng (WSGI)
+- JINJA2
+
+VENV:
+- Seperates ur stuff from work stuff
+- Modules will only be used in that space and wont interfere with things
+- Can easily delete it 
+- . path/to/venv/bin/activate
+
