@@ -28,5 +28,8 @@ This reminds me of Java/OOP once again. In OOP, we have objects, which in turn h
 object by writing .methodName(), with whatever parameters desired in the parentheses. It seems like we are telling a Flask object, stored 
 under app, to run.
 
+Discovery:
+When we ran it, we found that it didn't do anything remarkable. However, once navigating to the website it printed out, we found the message, "No halo queso!" written. Perhaps this hello_world function is being called somewhere and returning it's return output, leading to this result.
+
 Comments:
 Ducks are cool. Frameworks seem interesting; I'm excited to start learning tools to be a SoftDev!
