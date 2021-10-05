@@ -19,14 +19,20 @@ We mainly just figured out how reading in CSV files works.
 This method also limits scalability. If sig figs increase, some code has to be created
 in response.
 """
-def weighted():
+
+
+def csvReader():
     import csv
-    import random
 
     #Reads CSV into program as "reader"
-    csv_file=open("occupations.csv")
-    reader=csv.reader(csv_file)
+    csv_file = open("occupations.csv")
+    reader = csv.reader(csv_file)
+    return reader
 
+def weighted():
+    import random
+
+    reader = csvReader()
     #skips first line
     next(reader)
 
@@ -44,6 +50,19 @@ def weighted():
         total=total+(wdict[x]*10)
         if total>=num:
             return(x)
+
+def generateListStr():
+    reader = csvReader()
+
+    #skips first line
+    next(reader)
+
+    #Adds CSV info to dictionary
+    returnString = ""
+    for row in reader:
+        returnString += row[0] + "<br>"
+    return returnString
+
 
 if __name__ == "__main__":
     print(weighted())
