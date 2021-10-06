@@ -60,7 +60,9 @@ def generateListStr():
     #Adds CSV info to dictionary
     returnString = ""
     for row in reader:
-        returnString += row[0] + "<br>"
+        if row[0] != "Total":
+            returnString += row[0] + "<br>"
+
     return returnString
 
 
