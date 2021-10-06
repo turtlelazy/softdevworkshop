@@ -51,7 +51,7 @@ def weighted():
         if total>=num:
             return(x)
 
-def generateListStr():
+def generateListStr(highlight):
     reader = csvReader()
 
     #skips first line
@@ -60,8 +60,14 @@ def generateListStr():
     #Adds CSV info to dictionary
     returnString = ""
     for row in reader:
+        
         if row[0] != "Total":
-            returnString += row[0] + "<br>"
+            if(highlight and row[0] == highlight):
+                    returnString+="<mark>"
+                    returnString += row[0] + "</mark>" + "<br>"
+            else:
+                returnString += row[0] + "<br>"
+                
 
     return returnString
 

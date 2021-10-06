@@ -19,7 +19,8 @@ def hello_world():
     #This code does similar to what is done in v3, with the exception of dealing with cases where the file is imported somewhere else
     print("the __name__ of this module is... ")
     print(__name__)
-    return tnpg + "<img src = 'https://media1.giphy.com/media/1lBjBpMwgI8PBZKov0/giphy.gif?cid=790b761143d782cb33450122ff9ea261bb48f236bc68b9fe&rid=giphy.gif&ct=g'>"+"<h2>" + weighted() + "</h2>" + generateListStr()
+    job = weighted()
+    return tnpg + "<img src = 'https://media1.giphy.com/media/1lBjBpMwgI8PBZKov0/giphy.gif?cid=790b761143d782cb33450122ff9ea261bb48f236bc68b9fe&rid=giphy.gif&ct=g'>"+"<h2>" + job + "</h2>" + generateListStr(job)
 
 
 if __name__ == "__main__":  # true if this file NOT imported

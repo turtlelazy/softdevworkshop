@@ -28,7 +28,7 @@ def hello_world():
     #This code does similar to what is done in v3, with the exception of dealing with cases where the file is imported somewhere else
     print("the __name__ of this module is... ")
     print(__name__)
-    return tnpg + "<h2>" + weighted() + "</h2>" + generateListStr()
+    return tnpg + "<h2>" + weighted() + "</h2>" + generateListStr(None)
 
 
 if __name__ == "__main__":  # true if this file NOT imported
