@@ -1,0 +1,3 @@
+When going to root, we saw the same usual no hablo queso. Pero, when we went to root/foo.html, we loaded in the foo.html page instead.
+In addition, when we navigated to root/foo (the normal file without an extension), we received a request to download something, which
+contained the same foo file in the static folder.
