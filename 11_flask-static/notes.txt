@@ -1,3 +1,16 @@
-When going to root, we saw the same usual no hablo queso. Pero, when we went to root/foo.html, we loaded in the foo.html page instead.
-In addition, when we navigated to root/foo (the normal file without an extension), we received a request to download something, which
-contained the same foo file in the static folder.
+Cool Dogs - Ishraq Mahid & Fish, Ivan Mijacika & Bob, and Gavin McGinley & Craig
+SoftDev
+k11 -- Flask Staticness -- Exploration of Flask framework -- We explored static webpages
+2021 - 10 - 6
+
+Questions:
+Why is it necessary to have a static page? Can't we simply leave the loading of the static page to the user 
+accessing the server or having a function in flask that doesn't change?
+
+
+Comments:
+We have a Cool static Page for the Cool Dogs.
+
+Summary:
+We utilized explored static sites through flask. We had a folder called static, which we accessed by traveling through /static being tagged
+on to the url. We messed around with some html, exploring the premade static materials and creating our own static site displaying our roster.
