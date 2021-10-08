@@ -1,0 +1,40 @@
+Cool Dogs - Ishraq Mahid & Fish, Ivan Mijacika & Bob, and Gavin McGinley & Craig
+SoftDev
+k11 -- Flask Templateness -- Exploration of Flask Templates -- We explored templates
+2021 - 10 - 7
+
+Summary:
+We learned about templates and explored how they worked in class. At first, 
+we learned the ropes by exploring portions of the code and analyzing the methods
+in app.py and the syntax in the html template. We then started messing around a bit
+with templates to furhter exlpore how they worked.
+
+Questions:
+We need to learn the syntax for writing templates and what not, but why is there an
+opening and closing tag for a for loop, but for normal variables there aren't?
+
+Is it possible to create interactive/moving elements using Flask, or is this better left
+to JS?
+
+Can we wrap variables in the template around certain tags? How do we seperate the Flask
+from the HTML and recognize the lingo.
+
+Comments & Answers:
+
+What happens if you remove render_template from this line?
+Nothing happens to the root directory. But it would cause an error 
+on /my_foist_template, because the template can't be rendered.
+
+Q1: Can all of your teammates confidently predict the URL to use to load this page?
+Yes. We've realized that this keyword specifies the directory, with root being at /.
+
+When doing some digging around, we saw that the template folder had
+space that didn't follow convential HTML structure. We assumed this to be
+the way that Flask was using this html as a "template." 
+
+#Q2: What is the significance of each argument?
+return render_template( 'model_tmplt.html', foo="fooooo", collection=coll)
+They look like parameters to this function called render_template. 
+We specify the target template, and set variables equal to what we want.
+The template itself has spots for the foo and collection variables, 
+and it appears almost as if that spot is translated by Flask for it's own purposes.
