@@ -11,21 +11,26 @@ app = Flask(__name__)
 coll = occupations.init()
 @app.route("/occupyflaskst")
 def test_tmplt():
+    
+    """
+    foo = website heading
+    header = h1 tag
+    names = trio names
+    occ = random occupation
+    coll is taken from occupations.py, it is essentially a dictionary being passed on
+    """
+
     currentOccupation = occupations.chooseRandom()
     firstWord = currentOccupation.partition(' ')[0]
     wikipediaPage = "https://en.wikipedia.org/wiki/" + firstWord
 
     return render_template('tablified.html', 
-        #foo is the website heading
         foo="Occupations", 
-        #header is the h1 tag
         header = "Data Covering Various Occupations and their Respective Percentages", 
-        #Names is our trio
         names = "Gitsters | Alejandro Alonso, Ivan Lam, Ishraq Mahid",
-        #occ is a random occupation
         occ = currentOccupation,
         wiki = wikipediaPage
-,       #taken from occupations.py, it is essentially a dictionary being passed on
+,       
         collection=coll)
 
 if __name__ == "__main__":
