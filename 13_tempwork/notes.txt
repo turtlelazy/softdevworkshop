@@ -5,6 +5,11 @@
 
 Notes:
 
-Jinja is not much different from HTML and Javascript. Using them is very easy and it makes 
-coding similar pages very effecient.
-Jinja can use variables to render HTML template with specific values.
+Jinja makes it easier to input variables from our Flask app. We can enter variables to render our HTML
+through our template, and in this case we pushed through our random occupation and csv file information
+into the template. This might make it easier to put in other types of data, like say a list of
+rubber duckies types or book genres.
+
+When a webpage refreshes, it runs from the function, but the python script itself is running from the same spot.
+We learned this the hard way when we had our random occupation set as a variable in the beginning and wouldn't
+change after refreshing.
