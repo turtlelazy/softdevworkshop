@@ -11,6 +11,9 @@ app = Flask(__name__)
 coll = occupations.init()
 @app.route("/occupyflaskst")
 def test_tmplt():
+    currentOccupation = occupations.chooseRandom()
+    firstWord = currentOccupation.partition(' ')[0]
+    wikipediaPage = "https://en.wikipedia.org/wiki/" + firstWord
 
     return render_template('tablified.html', 
         #foo is the website heading
@@ -20,7 +23,8 @@ def test_tmplt():
         #Names is our trio
         names = "Gitsters | Alejandro Alonso, Ivan Lam, Ishraq Mahid",
         #occ is a random occupation
-        occ = occupations.chooseRandom()
+        occ = currentOccupation,
+        wiki = wikipediaPage
 ,       #taken from occupations.py, it is essentially a dictionary being passed on
         collection=coll)
 
