@@ -1,0 +1,10 @@
+# Gitsters: Alejandro Alonso, Ivan Lam, Ishraq Mahid
+# SoftDev
+# K13 -- Template for Success
+# 2021-10-08
+
+Notes:
+
+Jinja is not much different from HTML and Javascript. Using them is very easy and it makes 
+coding similar pages very effecient.
+Jinja can use variables to render HTML template with specific values.
