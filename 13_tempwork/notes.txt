@@ -13,3 +13,6 @@ rubber duckies types or book genres.
 When a webpage refreshes, it runs from the function, but the python script itself is running from the same spot.
 We learned this the hard way when we had our random occupation set as a variable in the beginning and wouldn't
 change after refreshing.
+
+I had an idea to utilize wikipedia and simply input the first word. However, this is extremely lazy and not a very
+consistent solution.
