@@ -61,7 +61,8 @@ def authenticate():
     #request has many different attribtues within it that we can utilize as a string
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return "Hello " + request.args['username'] + "! It's time to get Flasky!" + "\n" + "You made a " + request.method + " request just now." # response to a form submission
+    return render_template('response.html', username = request.args['username'], method = request.method)
+    #return "Hello " + request.args['username'] + "! It's time to get Flasky!" + "\n" + "You made a " + request.method + " request just now." # response to a form submission
     #return str(request)
 
 
