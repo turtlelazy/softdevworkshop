@@ -1,6 +1,9 @@
-# Clyde 'Thluffy' Sinclair
-# SoftDev
-# Oct 2021 
+"""
+Ishraq Mahid
+SoftDev
+K14 -- Form and Function -- Utilizing Request Info
+2021-10-15
+"""
 
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
@@ -22,7 +25,7 @@ Execute your tests. Process results.
 PROTIP: Insert your own in-line comments wherever they will help your future self and/or current teammates understand what is going on.
 '''
 
-@app.route("/") #, methods=['GET', 'POST'])
+@app.route("/", methods=['GET', 'POST'])
 def disp_loginpage():
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
@@ -41,7 +44,7 @@ def disp_loginpage():
     return render_template( 'login.html' )
 
 
-@app.route("/auth") # , methods=['GET', 'POST'])
+@app.route("/auth", methods=['GET', 'POST'])
 def authenticate():
     #Request objects predicted to print based on what was received from the previous website, as there exists a request object 
     #to be passed.
@@ -49,15 +52,17 @@ def authenticate():
     print("***DIAG: this Flask obj ***")
     print(app)
     print("***DIAG: request obj ***")
-    print(request)
+    print(request.method)
     print("***DIAG: request.args ***")
-    print(request.args)
+    print(request.args['username'])
     #print("***DIAG: request.args['username']  ***")
     #print(request.args['username'])
+
+    #request has many different attribtues within it that we can utilize as a string
     print("***DIAG: request.headers ***")
     print(request.headers)
-    #return "Waaaa hooo HAAAH"  #response to a form submission
-    return str(request)
+    return "Hello " + request.args['username'] + "! It's time to get Flasky!" + "\n" + "You made a " + request.method + " request just now." # response to a form submission
+    #return str(request)
 
 
     

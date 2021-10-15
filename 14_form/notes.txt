@@ -1,6 +1,14 @@
+Ishraq Mahid
+SoftDev
+K14 -- Form and Function -- Utilizing Request Info
+2021-10-15
+
+Summary:
+We explored requests and forms. We figured out the infoflow for HTML, and how to access valuable information through Flask.
+In the case of Flask, the request object contains a lot of useful information, like User-Agent, to the request type.
+In this case, we explored the transfer of info through the username, an object we tagged onto the request through form.
+
 Results of going to http://127.0.0.1:5000/auth?username=ABCDEFGHIJKLMNOP&sub1=Submit:
-
-
 ***DIAG: this Flask obj ***
 <Flask 'app'>
 ***DIAG: request obj ***
@@ -16,3 +24,11 @@ User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15
 Referer: http://127.0.0.1:5000/
 Accept-Language: en-us
 Accept-Encoding: gzip, deflate
+
+Questions:
+What would  other reqs (like POST) look like? I don't expect too much but just wondering if it follows this same pattern.
+Is there a cleaner way to sort through all this info or is it busywork that we will have to get used to?
+
+Comments:
+Every website appears to have a request object of some sort, and will at the very least be a GET req that retrieves the website info
+from the server. Furthermore, one accesses this in Flask through the request object.
