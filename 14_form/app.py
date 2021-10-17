@@ -27,20 +27,24 @@ PROTIP: Insert your own in-line comments wherever they will help your future sel
 
 @app.route("/", methods=['GET', 'POST'])
 def disp_loginpage():
-    print("\n\n\n")
-    print("***DIAG: this Flask obj ***")
-    print(app)
-    print("***DIAG: request obj ***")
+    # print("\n\n\n")
+    # print("***DIAG: this Flask obj ***")
+    # print(app)
+    # print("***DIAG: request obj ***")
 
     #Request objects predicted to not work because there is not request going to the template html
 
-    print(request)
-    print("***DIAG: request.args ***")
-    print(request.args)
+    # print(request)
+    # print("***DIAG: request.args ***")
+    # print(request.args)
     #print("***DIAG: request.args['username']  ***")
     #print(request.args['username'])
-    print("***DIAG: request.headers ***")
-    print(request.headers)
+    # print("***DIAG: request.headers ***")
+    # print(request.headers)
+
+    #default login template
+
+    """login template, which was provided"""
     return render_template( 'login.html' )
 
 
@@ -48,20 +52,25 @@ def disp_loginpage():
 def authenticate():
     #Request objects predicted to print based on what was received from the previous website, as there exists a request object 
     #to be passed.
-    print("\n\n\n")
-    print("***DIAG: this Flask obj ***")
-    print(app)
-    print("***DIAG: request obj ***")
-    print(request.method)
-    print("***DIAG: request.args ***")
-    print(request.args['username'])
+    # print("\n\n\n")
+    # print("***DIAG: this Flask obj ***")
+    # print(app)
+    # print("***DIAG: request obj ***")
+    # print(request.method)
+    # print("***DIAG: request.args ***")
+    # print(request.args['username'])
     #print("***DIAG: request.args['username']  ***")
     #print(request.args['username'])
 
     #request has many different attribtues within it that we can utilize as a string
-    print("***DIAG: request.headers ***")
-    print(request.headers)
-    return render_template('response.html', username = request.args['username'], method = request.method)
+    # print("***DIAG: request.headers ***")
+    # print(request.headers)
+
+
+    """inputs in the username and request method
+    username is derieved from the GET request, username attribute; method is derived from request method type"""
+
+    return render_template('response.html', username = request.args.get('username'), method = request.method)
     #return "Hello " + request.args['username'] + "! It's time to get Flasky!" + "\n" + "You made a " + request.method + " request just now." # response to a form submission
     #return str(request)
 
