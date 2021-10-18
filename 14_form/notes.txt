@@ -25,6 +25,9 @@ Referer: http://127.0.0.1:5000/
 Accept-Language: en-us
 Accept-Encoding: gzip, deflate
 
+We did not utilize a template initially, misreading the assignment prompt, but afterward we fixed up
+our code and utilized a template to make it easier to use in terms of scalability. Furthermore, we listened to the advice provided on the peer review worksheet, understanding how we could further improve our code and its use.
+
 Questions:
 What would  other reqs (like POST) look like? I don't expect too much but just wondering if it follows this same pattern.
 Is there a cleaner way to sort through all this info or is it busywork that we will have to get used to?
