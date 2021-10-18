@@ -30,7 +30,7 @@ def authenticate():
     """
     renders response template, placing in the username and method retrieved from the request
     """
-    return render_template('response.html', username=request.args['username'], method=request.method)
+    return render_template('response.html', username=request.args.get('username'), method=request.method)
     #brings up the response.html page with username and the method request sent to the page
     #uses responses from previous inputs/method
 
