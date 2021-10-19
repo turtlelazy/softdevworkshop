@@ -18,49 +18,69 @@ app = Flask(__name__)  # create Flask object
 
 app.secret_key = KEY
 
+debug = True
 @app.route("/", methods=['GET', 'POST'])
 def disp_loginpage():
     """
-    renders the login page
+    renders the login page or home page, depending on user login status
     """
-    print(request.method)
+    if debug:
+        print(request.method)
     try:
+        #The only thing that sends a POST request, piping it into here, is the logout button
         if request.method == "POST":
+            #Sets 'user' key to None to signal no user logged in
             session['user'] = None
             return render_template('login.html')
+        
+        #Everything else is a GET req essentially
         elif request.method == "GET":
-            print(session['user'])
+            if debug:
+                print(session['user'])
+            
+            #Checks to see if user exists -> logs them in if it does
             if session['user']:
                 return render_template('Welcome.html', username = session['user'])
+
+            #returns login template otherwise
             return render_template('login.html')
 
     except:
+        #in scenario of bad juju, simply has user try to login
         return render_template('login.html')
-    #brings up the login.html page
-    #askes for inputs of a text and to press a submit button
 
-#https://pythonbasics.org/flask-cookies/
+
 @app.route("/auth_ed", methods=['GET', 'POST'])
 def authenticate():
     """
-    renders response template, placing in the username and method retrieved from the request
+    renders auth flow template and responds to user login
     """
+    #try catch and responsive failedlogin template depending on failure type
     try:
-        print(request.method)
+        if debug:
+            print(request.method)
+        
+        #only req type for this page is GET (although maybe not accurate of what is going on?)
         if request.method == "GET":
+    
             user = request.args.get('username')
             password = request.args.get('password')
             
-            print("Username and Password HERE:")
-            print(user)
-            print(password)
+            if debug:
+                print("Username and Password HERE:")
+                print(user)
+                print(password)
+            
+            #Hardcoded user and password
             if(user == "Mr.Mykolyk" and password == "251"):
                 session['user'] = user
+                #renders template using credentials
                 return(render_template('response.html',username = user, method = request.method ))
             
             return render_template("FailedLogin.html", error = "an incorrect password or username")
     except:
         return render_template("FailedLogin.html", error = "bad juju")
+
     #print("This is the USERNAME AND PASSWORD")
     #still prints None, alt
     #print(user)
