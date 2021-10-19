@@ -11,7 +11,7 @@ K14 -- Form and Function -- Utilizing Request Info
 <html>
 
 <head>
-    <title> RESPONSE PAGE </title>
+    <title> WELCOME </title>
 </head>
 
 <body>
@@ -21,13 +21,13 @@ K14 -- Form and Function -- Utilizing Request Info
 
 
     <h2>
-        Hello {{username}}! It's time to get Flasky!
+        Hello {{username}}! You are now Flasky!
     </h2>
-
-    <h3>
-        You made a {{method}} request just now. Click <a href = "/">here</a> to return to home
-    </h3>
-<!--logout-->
+    <form action="/" method="POST">
+        <input type = "submit" value = "Logout">
+    </form>
+    
+    <!--logout-->
 </body>
 
 </html>

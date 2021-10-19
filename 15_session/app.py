@@ -9,6 +9,7 @@ from flask import Flask  # facilitate flask webserving
 from flask import render_template  # facilitate jinja templating
 from flask import request
 from flask import session
+from flask.wrappers import Response
 from config import KEY
 #the conventional way:
 #from flask import Flask, render_template, request
@@ -22,7 +23,19 @@ def disp_loginpage():
     """
     renders the login page
     """
-    return render_template('login.html')
+    print(request.method)
+    # try:
+    if request.method == "POST":
+        session['user'] = None
+        return render_template('login.html')
+    elif request.method == "GET":
+        print(session['user'])
+        if session['user']:
+            return render_template('Welcome.html', username = session['user'])
+        return render_template('login.html')
+
+    # except:
+    #     return render_template('login.html')
     #brings up the login.html page
     #askes for inputs of a text and to press a submit button
 
@@ -37,14 +50,12 @@ def authenticate():
         if request.method == "GET":
             user = request.args.get('username')
             password = request.args.get('password')
-
-            session['user'] = user
-            session['password'] = password
             
             print("Username and Password HERE:")
-            print(session['user'])
-            print(session['password'])
+            print(user)
+            print(password)
             if(user == "Mr.Mykolyk" and password == "251"):
+                session['user'] = user
                 return(render_template('response.html',username = user, method = request.method ))
             
             return render_template("FailedLogin.html", error = "an incorrect password or username")
