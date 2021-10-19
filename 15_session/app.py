@@ -34,11 +34,11 @@ def authenticate():
     user = request.args.get('username')
     password = request.args.get('password')
 
-    resp = make_response(render_template(
-        'response.html', username=request.args.get('username'), method=request.method))
-    resp.set_cookie('user',user)
-    resp.set_cookie('password',password)
-    print("This is the USERNAME AND PASSWORD")
+    if(user == "Mr.Mykolyk" and password == "251"):
+        return(render_template('response.html',username = user, method = request.method ))
+    
+    return render_template("FailedLogin.html")
+    #print("This is the USERNAME AND PASSWORD")
     #still prints None, alt
     #print(user)
     #print(password)
