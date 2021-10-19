@@ -24,18 +24,18 @@ def disp_loginpage():
     renders the login page
     """
     print(request.method)
-    # try:
-    if request.method == "POST":
-        session['user'] = None
-        return render_template('login.html')
-    elif request.method == "GET":
-        print(session['user'])
-        if session['user']:
-            return render_template('Welcome.html', username = session['user'])
-        return render_template('login.html')
+    try:
+        if request.method == "POST":
+            session['user'] = None
+            return render_template('login.html')
+        elif request.method == "GET":
+            print(session['user'])
+            if session['user']:
+                return render_template('Welcome.html', username = session['user'])
+            return render_template('login.html')
 
-    # except:
-    #     return render_template('login.html')
+    except:
+        return render_template('login.html')
     #brings up the login.html page
     #askes for inputs of a text and to press a submit button
 

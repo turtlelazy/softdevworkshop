@@ -7,7 +7,8 @@ K14 -- Form and Function -- Utilizing Request Info
 
 from flask import Flask  # facilitate flask webserving
 from flask import render_template  # facilitate jinja templating
-from flask import request  # facilitate form submission
+from flask import request
+from flask.helpers import make_response  # facilitate form submission
 
 #the conventional way:
 #from flask import Flask, render_template, request
