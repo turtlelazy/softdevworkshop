@@ -47,9 +47,9 @@ def authenticate():
             if(user == "Mr.Mykolyk" and password == "251"):
                 return(render_template('response.html',username = user, method = request.method ))
             
-            return render_template("FailedLogin.html")
+            return render_template("FailedLogin.html", error = "an incorrect password or username")
     except:
-        return render_template("FailedLogin.html")
+        return render_template("FailedLogin.html", error = "bad juju")
     #print("This is the USERNAME AND PASSWORD")
     #still prints None, alt
     #print(user)
