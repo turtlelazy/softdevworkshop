@@ -32,28 +32,30 @@ def authenticate():
     """
     renders response template, placing in the username and method retrieved from the request
     """
-    user = request.args.get('username')
-    password = request.args.get('password')
+    try:
+        print(request.method)
+        if request.method == "GET":
+            user = request.args.get('username')
+            password = request.args.get('password')
 
-    session['user'] = user
-    session['password'] = password
-    
-    print("Username and Password HERE:")
-    print(session['user'])
-    print(session['password'])
-    if(user == "Mr.Mykolyk" and password == "251"):
-        return(render_template('response.html',username = user, method = request.method ))
-    
-    return render_template("FailedLogin.html")
+            session['user'] = user
+            session['password'] = password
+            
+            print("Username and Password HERE:")
+            print(session['user'])
+            print(session['password'])
+            if(user == "Mr.Mykolyk" and password == "251"):
+                return(render_template('response.html',username = user, method = request.method ))
+            
+            return render_template("FailedLogin.html")
+    except:
+        return render_template("FailedLogin.html")
     #print("This is the USERNAME AND PASSWORD")
     #still prints None, alt
     #print(user)
     #print(password)
 
-    
-
-    return resp
-    #brings up the response.html page with username and the method request sent to the page
+        #brings up the response.html page with username and the method request sent to the page
     #uses responses from previous inputs/method
 
 
