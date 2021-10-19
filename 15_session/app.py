@@ -8,13 +8,14 @@ K15 -- Sessions Greetings -- Login and Cookies
 from flask import Flask  # facilitate flask webserving
 from flask import render_template  # facilitate jinja templating
 from flask import request
-from flask.helpers import make_response  # facilitate form submission
-
+from flask import session
+from config import KEY
 #the conventional way:
 #from flask import Flask, render_template, request
 
 app = Flask(__name__)  # create Flask object
 
+app.secret_key = KEY
 
 @app.route("/", methods=['GET', 'POST'])
 def disp_loginpage():
@@ -34,6 +35,12 @@ def authenticate():
     user = request.args.get('username')
     password = request.args.get('password')
 
+    session['user'] = user
+    session['password'] = password
+    
+    print("Username and Password HERE:")
+    print(session['user'])
+    print(session['password'])
     if(user == "Mr.Mykolyk" and password == "251"):
         return(render_template('response.html',username = user, method = request.method ))
     
