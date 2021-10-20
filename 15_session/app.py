@@ -1,5 +1,5 @@
 """
-Ishraq Mahid, Lucas Tom-Wong (LTW), Tomas Acuna
+The Onions - Ishraq Mahid, Lucas Tom-Wong (LTW), Tomas Acuna
 SoftDev
 K15 -- Sessions Greetings -- Login and Cookies
 2021-10-18
@@ -9,7 +9,6 @@ from flask import Flask  # facilitate flask webserving
 from flask import render_template  # facilitate jinja templating
 from flask import request
 from flask import session
-from flask.wrappers import Response
 from config import KEY
 #the conventional way:
 #from flask import Flask, render_template, request

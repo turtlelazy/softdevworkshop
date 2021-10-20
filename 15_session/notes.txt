@@ -1,4 +1,26 @@
-Cookies are stored locally
+The Onions - Ishraq Mahid, Lucas Tom-Wong (LTW), Tomas Acuna
+SoftDev
+K15 -- Sessions Greetings -- Login and Cookies
+2021-10-18
 
+Summary:
+Cookies are stored locally. We use something called sessions to store the cookies.
+Something cool is that we can check for existence of a key by doing 
+session['key']. We can utilize cookies to keep track of sessions and the user logged in. 
 
-Looking at this to try and figure out cookies at leaast initially: https://pythonbasics.org/flask-cookies/
+We also learned about error handling. Generally it is better to have a conditional
+to deal with potential errors, since it uses up less resources compared to having
+the try catch statement. However, in the case that errors do pop up, a try/catch
+makes it so that the user can continue using the site despite weird bugs that may occur.
+
+Questions:
+What exactly is the difference between POST and GET and the other types? I understand 
+them somewhat in the context of APIs, but my group did not have or remember
+the experience of creating such requests in a meaningful manner. For this assignment
+we utilized them to seperate input information and what to look at for the login page.
+Furthermore, how can we apply this concept of POST and GET in Flask (or whatever other frameworks).
+
+Comments:
+This assignment took longer than usual assignments. The concepts were interesting and more fun
+to play around with. We also thought of different ways to handle the website redirecting 
+and authflow, along with other things we noticed with forms and Jinja.
