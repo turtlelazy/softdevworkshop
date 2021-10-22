@@ -32,7 +32,7 @@ def dict2SQ(dict, dict_name):
     for item in dict:
         item_string = "('" + item[dict_loop[0]] + "'," + \
             item[dict_loop[1]] + "," + item[dict_loop[2]] + ")"
-        c.execute("INSERT INTO roster VALUES "+item_string+";")
+        c.execute("INSERT INTO "+ dict_name +" VALUES "+item_string+";")
         if debug:
             print(item_string)
     
@@ -47,17 +47,20 @@ def dict2SQ(dict, dict_name):
         #c.execute("INSERT INTO roster VALUES ('whose-it', 2);")
         
     #c.execute("CREATE TABLE [IF NOT EXISTS] " + dict_name + dict_headers)
-    db.commit()
 
 def printDictioanry(dic):
     for row in dic:
         print(", ".join(row))
 
 
+def printDB(tableName):
+    c.execute("SELECT * FROM " + tableName)
+    rows = c.fetchall()
+    for item in rows:
+        print(item)
 
-
-command = ""          # test SQL stmt in sqlite3 shell, save as string
-c.execute(command)    # run SQL statement
+#command = ""          # test SQL stmt in sqlite3 shell, save as string
+#c.execute(command)    # run SQL statement
 
 #==========================================================
 
@@ -65,9 +68,12 @@ if __name__ == "__main__":
     rosterDict = readFile('students.csv')
     dict2SQ(rosterDict, "roster")
     db.commit()  # save changes
-    rows = c.fetchall()
-    for i in range(len(rows)):
-        print(rows[i])
+    printDB("roster")
+
+    # coursesDict = readFile('courses.csv')
+    # dict2SQ(coursesDict, "courses")
+    # db.commit()  # save changes
+    # printDB("courses")
     db.close()  # close database
     
     
