@@ -82,6 +82,7 @@ def printDB(tableName):
         print(item)
 
 
+#source: https://www.sqlitetutorial.net/sqlite-exists/
 def dbExistence(tableName):
     '''
     returns boolean based on whether or not the given tableName exists
