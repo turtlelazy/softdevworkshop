@@ -59,6 +59,12 @@ def printDB(tableName):
     for item in rows:
         print(item)
 
+def dbExistence(dict_name):
+
+    c.execute("SELECT EXISTS(SELECT * FROM '"+dict_name+"')")
+    exists = c.fetchone()[0]
+    exists = exists == 1
+    return(exists)
 #command = ""          # test SQL stmt in sqlite3 shell, save as string
 #c.execute(command)    # run SQL statement
 
@@ -66,10 +72,10 @@ def printDB(tableName):
 
 if __name__ == "__main__":
     rosterDict = readFile('students.csv')
-    dict2SQ(rosterDict, "roster")
-    db.commit()  # save changes
+    #dict2SQ(rosterDict, "roster")
+    #db.commit()  # save changes
     printDB("roster")
-
+    print(dbExistence('roster'))
     # coursesDict = readFile('courses.csv')
     # dict2SQ(coursesDict, "courses")
     # db.commit()  # save changes
