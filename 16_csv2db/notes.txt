@@ -1,0 +1,33 @@
+#The Onions - Tomas Acuna, Lucas Tom-Wong, Ishraq Mahid
+#SoftDev
+#k16 -- SQLiters and Database Agony
+#2021 - 10 - 25
+#2.5 hours
+
+Summary:
+what is a relational database
+https://www.tutorialspoint.com/sqlite/sqlite_commands.htm
+need semicolon at end of line for sqlite commands when using in terminal (need to explore python)
+
+
+Important Basic Commands to Remember:
+#remember to use SEMICOLONS AFTER INPUTTING COMMANDS
+
+CREATE TABLE <tableName> (name TEXT, id INTEGER); #variable name then variable type
+
+INSERT INTO <tableName> VALUES; ("whose-it", 2); #like a dictionary
+
+SELECT * FROM <tableName>; #prints <tableName> values
+SELECT name FROM <tableName>; #prints value at key
+
+SELECT <key> FROM <tableName> WHERE <keyValue> = <value>; #searches by keyvalue
+Questions:
+Is there an easier way to interface sqlite through python? We are currently accessing it through strings that in turn
+utilize sqlite through the cursor (at least thats what it seems), but can we simply call something like,
+cursor.select() and gain contents of cursor that way?
+
+Furthermore, can we create objects, format their type, and input it into sqlite more easily?
+
+Comments:
+So far, sqlite seems like a pain, and it hurts with the way we're managing it through strings. We hope for an easier more
+intuitive way to access the db's.
