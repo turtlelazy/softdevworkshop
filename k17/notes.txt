@@ -1,0 +1,22 @@
+#The Onions - Tomas Acuna, Lucas Tom-Wong, Ishraq Mahid
+#SoftDev
+#k17 -- Database Agony Revision and POO
+#2021 - 10 - 25
+#0.5 hours
+
+Summary:
+We had code review in class, so that we could see what other groups did and better methods they utilized for using SQlite and doing
+the prompt. 
+Some things very useful are...
+    the use of triple quotes ("""TRIPLE QUOTES""").
+    f string, with brackets in the string allowing us to replace it with what we want
+    c.executemany... which lets us executemany (this lets us get rid of the messy for loop)
+
+Afterwards, we took a look at POO and came up with a design doc for it.
+
+Comments:
+Our team's method was slightly messy, but did work. We can definitely utilize these new techniques we learned to 
+clean it up and improve sustainability.
+
+Questions:
+Wouldn't it be better to store our design information as an .md file, utilizing markdown as needed and having an easy to view format?
