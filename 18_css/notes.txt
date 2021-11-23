@@ -1,0 +1,20 @@
+Team FF: Ishraq Mahid and Michelle Lo
+SoftDev pd0
+K18 -- CSS basics
+2021-11-23t
+
+Questions/Comments/Discoveries:
+Inline CSS can make for messy code.
+
+You can edit the page directly through the inspect tool in Firefox.
+
+What is the difference between inline, internal style sheet, and external style sheet designs?
+Inline CSS will allow you to directly edit specific HTML elements. Internal CSS will allow you style the entire page by including CSS rules under head element. External CSS is similar to internal but uses the CSS rules linked in a separate .css file.
+
+What is the difference between margin and padding?
+Margin is the space around an element's border while padding is the space between element's border and element's content. In other words, padding concerns itself with what's inside and margins concerns itself with what's outside)
+
+Sources used:
+Lorem Ipsum Generator: https://loremipsum.io/generator/
+How to use <div> tag: https://www.w3schools.com/tags/tag_div.ASP
+Difference between the different styles: https://www.bitdegree.org/learn/style-html
