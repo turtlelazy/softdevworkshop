@@ -1,0 +1,16 @@
+Team FF: Ishraq Mahid and Michelle Lo
+SoftDev
+K19 - A RESTful Journey Skyward/APIs
+November 24th, 2021
+
+Questions/Comments/Discoveries:
+What is a Rest API?
+It transmits data back after receiving an https request.
+
+What's the purpose of obtaining a key?
+It prevents a potential server crash by making too many requests at one time.
+
+Urllib certificate verify mac error
+MacOS may prevent the usage of Urllib due to this error: SSL: CERTIFICATE_VERIFY_FAILED. This can be solved by installing the certifi package of certificates. Simply run the following
+commands in your virtual environment: pip3 install certifi and /Applications/Python\ 3.9/Install\ Certificates.command.
+Source: https://piazza.com/class/kv0wqn7faux3ye?cid=63
