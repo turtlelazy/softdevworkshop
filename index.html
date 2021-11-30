@@ -24,19 +24,29 @@
                 here for more information on alignment and these numbers:
                 https://getbootstrap.com/docs/5.0/layout/columns/
                 -->
-                <div class = 'col-6'>
+                <!-- The sm tag allows for viewable formatting, changing from horizontal to vertical layout, 
+                when the screen width is too small. -->
+                
+                <div class = 'col-sm-6'>
                     <h2>Ish and Fish</h2>
                     <p>My name is Ishraq and my ducky Fish is a water bottle. It's nonexistent ability to speak is telling you to look at the page source.</p>
+                    <!-- Color in bootstrap can be defined within these classes, depending on the use.
+                    In this case, these buttons are for information, so btn-info was used, which applied a baby blue
+                    color to the button. The size was also changed to make it bigger, with btn-lg. -->
+                    <button type = "button" class = "btn btn-info btn-lg">Learn More</button>
                 </div>
 
-                <div class = 'col-6'>
+                <div class = 'col-sm-6'>
                     <h2>Michelle and PHK</h2>
                     <p>My name is Michelle and my ducky Print Hello Kitty is a cat. She is meowing at you to look at the page source.</p>
+                    <button type="button" class="btn btn-info btn-lg">Learn More</button>
                 </div>
             </div>
 
-            <!-- Form -->
+            <!-- Forms can be used to stylize... forms...-->
+            <br>
             <form>
+                <!-- mb stands for margine botton. In this case, mb-3 was applied. -->
                 <div class="mb-3">
                     <label for="duckyName" class="form-label">Ducky Name</label>
                     <input type="email" class="form-control" id="duckyName" aria-describedby="duckyName">
