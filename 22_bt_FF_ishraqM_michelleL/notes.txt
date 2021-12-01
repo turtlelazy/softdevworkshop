@@ -1,0 +1,28 @@
+Team FF: Ishraq Mahid and Michelle Lo
+SoftDev
+K21 - Who Does Frame Work For?
+2021-November-30
+Time Spent: 0.8
+
+Questions:
+What is a framework and how does it make our life easier?
+
+What is the differences between the frameworks? (BT and FD?)
+
+Comments:
+I've heard that frameworks are very slow and take a much longer time to load.
+For this reason, they're powerful for things like prototypes and hackathons,
+but notorious when it comes to published sites. 
+
+Discoveries:
+- Cooler font and font styling options!
+- Adaptable CSS according to screen size! (col-sm-6)
+- Overall, very quick and clean method of inserting styling.
+
+Summary:
+Bootstrap framework works by utilizing class names, with the desired stylizing
+inside of the class tag. Any number of class tags can be used, which means
+any number of desired styling can be used. There are numbers and classes that
+provide different effects, and consulting the docs 
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+is useful in this reguard.
