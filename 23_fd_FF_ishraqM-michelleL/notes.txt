@@ -1,0 +1,17 @@
+Team FF: Ishraq Mahid and Michelle Lo
+SoftDev
+K23 -- No. 2?
+December 1st, 2021
+
+DISCO:
+- Like BS, FT has a lot of classes and structures that allow us to divy up the page as desired
+- Like in BS, there is a class for padding.
+
+QCC:
+- Does FT have adaptable CSS classes? Can the element sizing and formatting change depending on the screen size and to what extent is it adaptable?
+- Customizable padding?
+
+Q0 (Did you have to consult resources beyond your Devo-generated on-ramp? If so, cite all – including verbal consultations.)
+We didn't utilize resources other than those provided by our fellow devos on their on-ramp.
+Q1 (only to be answered after you have finished… At this point, which front-end framework do you prefer, and why?)
+We prefer BT since that is the one we have done much more research on. Furthermore, BT looks much cleaner and cooler in our opinion. However, we believe the two frameworks to be similar enough not to merit a significant preference of one over ther other.

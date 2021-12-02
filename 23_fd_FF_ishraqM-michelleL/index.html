@@ -1,0 +1,74 @@
+<!-- Team FF: Ishraq Mahid and Michelle Lo
+SoftDev
+K23 -- No. 2?
+December 1st, 2021 -->
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Compressed CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <title>Foundation Divinity</title>
+    <!-- Creating the "jumbotron" in FT by creating a singular row. We also add padding -->
+    <div class="grid-x grid-padding-x grid-padding-y">
+      <div class="cell" style="background-color:gray">
+        <h1 class="text-center" style="color: white">Team FF</h1>
+      </div>
+    </div>
+
+    <!-- Creating a simple grid containing our ducky information. -->
+    <div class="grid-x grid-padding-x grid-padding-y">
+      <div class="cell small-6" style="background-color: white">
+        <h3>Ish and Fish</h3>
+        <p>My name is Ishraq and my ducky Fish is a water bottle. It's nonexistent ability to speak is telling you to look at the page source.</p>
+        <img src="bottle.jpg" alt="Fish">
+        <br><br>
+        <a class = "button small-6" href="more.html">Learn more</a>
+      </div>
+      <div class="cell small-6" style="background-color: white">
+        <h3>Michelle and PHK</h3>
+        <p>My name is Michelle and my ducky Print Hello Kitty is a cat. She is meowing at you to look at the page source.</p>
+        <img src="CatDuck.png" alt="CatDuck">
+        <br><br>
+        <a class = "button small-6" href="more.html">Learn more</a>
+      </div>
+    </div>
+    <br>
+
+    <!-- Creating a form. Labels allow you to label each input box.
+    Help text can be used to describe input needed.-->
+    <div class="grid-container">
+      <div class="grid-x">
+        <div class="cell">
+          <label> Ducky Name
+            <input type="text" placeholder="Who's your ducky?">
+            <p class = "help-text">We'll never share your ducky with anyone else.</p>
+          </label>
+        </div>
+
+        <div class="cell">
+          <label> Ducky Owner
+            <input type="text" placeholder="Who's your ducky owner?">
+          </label>
+        </div>
+
+        <div class="cell">
+          <label> Ducky Owner
+            <input type="text" placeholder="Enter password here">
+          </label>
+        </div>
+
+        <fieldset class="cell">
+          <input type="checkbox" id="checkbox1">
+          <label for="checkbox1">I acknowledge the United Federation of Duckys' Terms of Service.</label>
+        </fieldset>
+
+        <input type="submit" class="button">
+      </div>
+    </div>
+  </body>
+</html>
