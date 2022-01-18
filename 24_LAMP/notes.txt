@@ -1,0 +1,23 @@
+Ishraq Mahid
+SoftDev
+K24 -- Cold LAMPin w Flav
+2022-01-18
+time spent:0.5
+
+Summary:
+I created a digital droplet using the free credits from the pack, and was able to setup a server with Ubuntu and Apache installed. Further more, the necessary security measures were put in place.
+
+Important Links:
+https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04
+https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04
+https://devconnected.com/how-to-change-user-on-linux/
+
+Important Commands:
+su <user> #switches user to desired user
+ufw status #shows status of SSH connections
+sudo apt install <pack> #installs desired package
+sudo systemctl restart sshd #restarts ssh service
+
+Important Files:
+
+~/etc/ssh/sshd_config #contains information reguarding ssh auth
