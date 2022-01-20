@@ -1,0 +1,18 @@
+Ishraq Mahid
+SoftDev
+K25 -- Flask-Apache
+2022-01-19
+time spent:0.5
+
+Summary:
+I created a digital droplet using the free credits from the pack, and was able to setup a server with Ubuntu and Apache installed. Further more, the necessary security measures were put in place.
+
+Important Links:
+https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+
+Important Commands:
+sudo apt-get install : installs the given package
+
+Important Files:
+
+/var/www : where our web apps are stored and run
