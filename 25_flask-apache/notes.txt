@@ -12,6 +12,7 @@ https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-applicati
 
 Important Commands:
 sudo apt-get install : installs the given package
+```sudo service apache2 restart ``` restarts apache2
 
 Important Files:
 
