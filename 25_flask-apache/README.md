@@ -54,4 +54,4 @@ from FlaskApp import app as application
 application.secret_key = 'Add your secret key'
 ```
 
-
+After restarting apache with ```sudo service apache2 restart ```, you should be good to go!
