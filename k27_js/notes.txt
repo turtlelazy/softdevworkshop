@@ -1,18 +1,18 @@
-Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
+Ishraq Mahid, Naomi Naranjo, Julia Nelson
 SoftDev pd0
 K27 -- Basic functions in JavaScript
-2022-02-03r
+2022-02-07
 
 DISCO
 -----------------------------------------------------------------
-* Ooooh, ___
-* Aaah-haa!  ____...
+* Functions can be defined as variables 
+* JS wasn’t actually based off of Java, but Scheme, and aimed to emulate the syntax of Java instead.
 =================================================================
 
 QCC
 -----------------------------------------------------------------
-* Why...?
-* Huh?
-* Whuh now?
+* In what ways is JS similar to Scheme that makes it distinct from other programming languages?
+* How are they different?
+* In what was can variable functions be utilized for effective programming?
 =================================================================
 
