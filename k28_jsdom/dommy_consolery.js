@@ -65,7 +65,45 @@ var stripe = function() {
   }
 };
 
+var fibby = function() {
+    var items = document.getElementsByTagName("li");
+    for(var i = 0; i < items.length; i++) {
+        items[i].innerText = fib(i);
+    }
+  
+};
+
+var facty = function() {
+    var items = document.getElementsByTagName("li");
+    for(var i = 0; i < items.length; i++) {
+        items[i].innerText = fact(i);
+    }
+  
+};
+
 //insert your implementations here for...
 // FIB
+var fib = (n) => {
+	if(n<=1){
+              return n
+	}
+	
+	else{
+              return (fib(n-1) + fib(n-2))
+	}
+};
+
+
 // FAC
+var fact = (n) => {
+	if(n<=1){
+		return 1
+	}
+	
+	else{
+		return n * fact(n-1)
+	}
+
+}
+
 // GCD
