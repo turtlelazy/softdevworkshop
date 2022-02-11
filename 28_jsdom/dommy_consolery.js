@@ -107,3 +107,30 @@ var fact = (n) => {
 }
 
 // GCD
+var gcd = (a,b) =>{
+  let greatest = 1;
+  for(let i = 1; i < a+1; i++){
+    if(b%i == 0 && a%i == 0){
+      greatest = i;
+    }
+  }
+  return greatest;
+};
+
+function gcdEr(){
+  var items = document.getElementsByTagName("li");
+  for (var i = 0; i < items.length; i++) {
+    items[i].innerText = gcd(parseInt((Math.random() * 100)), parseInt((Math.random() * 100)));
+  }
+}
+
+//fibby activates
+let button0 = document.getElementById("b");
+button0.addEventListener("click",fibby);
+
+//facty activates
+let button1 = document.getElementById("c");
+button1.addEventListener("click", facty);
+//gcdEr activates
+let button2 = document.getElementById("d");
+button2.addEventListener("click", gcdEr);
