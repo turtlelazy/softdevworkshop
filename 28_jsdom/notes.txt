@@ -16,3 +16,19 @@ QCC
 * NodeJS?
 * Async part of JS? What does it mean for JS to return something?
 =================================================================
+
+Useful Code:
+-----------------------------------------------------------------
+console.log("AYO");
+
+let button2 = document.getElementById("d");
+button2.addEventListener("click", gcdEr);
+
+var items = document.getElementsByTagName("li");
+    * can do the same for class and id. id returns one output however.
+
+let element = document.createElement(tagName[, options]);
+
+Docs:
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+=================================================================
