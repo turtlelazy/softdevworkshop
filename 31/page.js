@@ -41,7 +41,7 @@ let drawCircle = () =>{
     ctx.fill();
     frame += 1 * direction;
     if(direction != 0){
-        formerDirection = direction;
+        formerDirection = direction;    
     }
 }
 

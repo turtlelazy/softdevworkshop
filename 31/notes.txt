@@ -17,8 +17,12 @@ QCC
 -----------------------------------------------------------------
 * How can we time our program for the proper animation frame and to control speed of animation?
 * RequestID?
+* When would we want to save frames and restore them?
 =================================================================
 
-Useful Code:
+Useful Code & Links:
 -----------------------------------------------------------------
-* No new code; useful idea
+* window.requestAnimationFrame(draw) -> le window exists for our animation purposes
+* https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_animations -> woop woop, my source
+
+
