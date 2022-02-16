@@ -1,0 +1,24 @@
+Team Oranges :: Ishraq Mahid, Julia Nelson 
+SoftDev pd0
+K31 -- Animaniacs
+2022-02-08t
+--------------------------------------------------
+
+DISCO:
+--------------------------------------------------
+* The power of animations are on our side!
+* Animations work by sending multiple frames per second
+* Frames are cleared -> painted on top of -> displayed -> repeat
+* Less computationally expensive than rendering (for obvious reasons)
+* WAT Moment: For callbacks involving e, it appears that if you instead misread your variable names and placed the object in the context of "event" instead, your code may not break!
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* How can we time our program for the proper animation frame and to control speed of animation?
+* RequestID?
+=================================================================
+
+Useful Code:
+-----------------------------------------------------------------
+* No new code; useful idea
