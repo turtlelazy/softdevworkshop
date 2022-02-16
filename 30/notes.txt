@@ -1,0 +1,38 @@
+Team Oranges :: Ishraq Mahid, Julia Nelson, Naomi Naranjo
+SoftDev pd0
+K30 -- Recc and Circc
+2022-02-16
+--------------------------------------------------
+
+DISCO:
+--------------------------------------------------
+* Drawings! We can use Canvas in the 2d rendering context to create 2d images that are also interactive.
+* Rendering is different from image displaying and much more computationally intensive.
+* Le click with offset
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* What is the burden of the computation with our 2d renderering friend, canvas?
+* Mouse context? What more can be done?
+* Events? e? monke?
+=================================================================
+
+Useful Code & Links:
+-----------------------------------------------------------------
+* ToolBox:
+    * clearRect() (canvas)
+    * getElementById() (document)
+    * addEventListener() (document)
+    * fillStyle() (canvas)
+    * strokeStyle() (canvas)
+    * clearRect() (canvas)
+    * fillText() (canvas)
+    * beginPath() (canvas)
+    * arc() (canvas)
+    * rect() (canvas)
+    * fill() (canvas)
+    * stroke() (canvas)
+    * Math.PI (JS)
+    * offsetX (browser)
+    * offsetY (browser)
