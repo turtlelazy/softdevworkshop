@@ -29,7 +29,7 @@ let drawCircle = () =>{
     ctx.clearRect(0, 0, c.width, c.height);
     ctx.beginPath();
     ctx.strokeStyle = 'blue';
-    if (frame > 50 || frame < 0) {
+    if (frame > c.width/2 || frame < 0) {
         direction *= -1;
         if(frame < 0){
             frame *= -1;
