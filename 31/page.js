@@ -36,8 +36,23 @@ let drawCircle = () =>{
         }
     }
     console.log(frame);
+    let rgb = [0,0,0];
+
+
+    let total = c.width;
+    let scaleValue = frame;
+
+    if(direction < 0){
+        scaleValue = c.width - scaleValue;
+    }
+    console.log("Scalevalue = " + scaleValue);
+    console.log("Index = " + Math.floor(scaleValue / (total / 3)));
+    console.log("Width " + c.width);
+    rgb[Math.floor(scaleValue / (total/3))] = (scaleValue % total) / (total/3) * 255;
+
     ctx.arc(c.width/2, c.height/2, frame, 0, 2 * Math.PI);
-    ctx.fillStyle = "red";
+
+    ctx.fillStyle = `rgb(${rgb[0]},${rgb[1]},${rgb[2]})`;
     ctx.fill();
     frame += 1 * direction;
     if(direction != 0){
