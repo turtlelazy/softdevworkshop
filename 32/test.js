@@ -92,18 +92,18 @@ let vy = 5;
 
 
 let drawDVD = () => {
-    // ctx.clearRect(c.width,c.height);
+    ctx.clearRect(0,0,c.width,c.height);
     ctx.drawImage(img, x, y, 120, 50);
     x += vx;
     y += vy;
-    // if(x < 0 || x > c.width ){
-    //     x *= -1;
-    // }
-    // if (y < 0|| y > c.height){
-    //     y *= -1;
-    // }
-    window.cancelAnimationFrame(requestID);
-    requestID = window.requestAnimationFrame(drawDVD);
+    if(x < 0 || x > c.width-120 ){
+        vx *= -1;
+    }
+    if (y < 0|| y > c.height-50){
+        vy *= -1;
+    }
+    //window.cancelAnimationFrame(requestID);
+    window.requestAnimationFrame(drawDVD);
 }
 img.onload = function () {
     drawDVD();
