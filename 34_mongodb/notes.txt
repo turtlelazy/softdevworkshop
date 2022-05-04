@@ -1,0 +1,21 @@
+Ishraq Mahid
+SoftDev
+K34 -- AnotherDBPerspective
+2022-05-03
+time spent: 0.5
+
+Notes:
+
+Relationships:
+	- One-to-one
+	- one-to-many
+	- many-to-many
+
+Link vs Embed:
+	- How often does embedded info get accessed
+	- is data queried with embeded info
+	- does the info change often?
+
+Schema -> versioning of data formats and documents
+
+
